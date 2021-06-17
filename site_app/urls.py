@@ -1,10 +1,14 @@
-from django.urls import path
+from django.urls import path,re_path
 from site_app import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.views.generic.base import RedirectView
+
 
 urlpatterns = [
-    path("site_app/index", views.index),
-    path("site_app/liste_m", views.liste_m),
+    path("", views.index,name='homepage'),
+    path("index", views.index,name='homepage'),
+    path("liste_m", views.liste_m),
+
 ]
 
 urlpatterns += staticfiles_urlpatterns()

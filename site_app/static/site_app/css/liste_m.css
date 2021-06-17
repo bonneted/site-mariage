@@ -599,6 +599,7 @@ label {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px;
+  text-align: center;
 }
 
 .image-cont p {
@@ -620,6 +621,9 @@ label {
 }
 
 @media only screen and (max-width: 768px) {
+  .popup-content {
+    width: 100%;
+  }
   .popup-wrapper {
     display: block;
   }
