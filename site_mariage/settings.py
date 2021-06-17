@@ -29,7 +29,7 @@ if os.environ.get('ENV') == 'PRODUCTION':
 else:
     DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','site_mariage.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','app-mariage.herokuapp.com']
 
 if os.environ.get('ENV') == 'PRODUCTION':
 
