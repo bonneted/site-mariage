@@ -1,0 +1,38 @@
+{% load static %}
+{% load prog_calcul %}
+
+<li class="booking-card" style="background-image: url({% static 'site_app/img/liste_m/' %}{{ article.image }})">
+    <div class="book-container">
+      
+        {% if article.prix <= article.deja_paye %}
+        <p class="deja-offert">Offert</button>
+        {% else %}
+        <div class="content">
+          <button class="btn offrir" onclick="show_popup(event)">Offrir</button>
+          <div class='data_nom' id="{{ article.nom }}" display=none></div>
+          <div class='data_image' id="url({% static 'site_app/img/liste_m/' %}{{ article.image }})" display=none></div>
+          <div class='data_description' id="{{ article.description }}" display=none></div>
+          <div class='data_prix' id="{{ article.prix }}" display=none></div>
+          <div class='data_deja_paye' id="{{ article.deja_paye }}" display=none></div>
+        </div>
+        {% endif %}
+      
+    </div>
+    <div class="informations-container">
+      <h2 class="title">{{ article.nom }}</h2>
+      <h3 class="price">
+        <svg class="icon" style="width:30px;height:30px" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" />
+        </svg>{{ article.prix }}€
+      </h3>
+      <div class="more-information">
+        
+        <div class="progress">
+          <div class="progress-value" style="width:{{ article.prix|get_prog:article.deja_paye }}%"></div>
+        </div>
+
+        <p class="disclaimer">{{ article.deja_paye }}€ déjà offert</p>
+
+        </div>
+    </div>
+  </li>

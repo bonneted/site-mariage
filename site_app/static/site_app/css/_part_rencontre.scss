@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+
+.rencontre{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url(../img/rencontre_nobg.png);
+    background-color: #216b9286;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    .wrapper{
+        color: #922B21;
+        width: 40%;
+        padding: 1.6rem;
+        margin:4rem;
+        background-color: rgba(255, 255, 255, 0.808);
+        h2{
+            // font-family: 'Allura', cursive;
+            font-family: 'Charm', cursive;
+
+            font-size: 40px;
+            margin: 1rem;
+    
+        }
+
+    }
+
+  }
+
+  @media only screen and (max-width: 768px) {
+    .wrapper{
+        width: 80% !important;
+        margin: 10rem 2rem 10rem 2rem !important;
+        // margin-bottom: 10rem !important;
+    }
+    
+    .rencontre{
+    background-image: url(../img/rencontre_nobg_small.png);
+    }
+  
+  }
+  

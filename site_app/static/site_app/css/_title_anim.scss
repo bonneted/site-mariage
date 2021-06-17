@@ -1,0 +1,48 @@
+
+$letter-ln: 490.2921142578125, 239.3280029296875, 239.80885314941406, 606.78369140625, 422.5006408691406, 433.7734069824219, 246.02444458007812, 625.3903198242188, 571.5776977539062, 506.4450378417969, 668.7838134765625, 239.80064392089844, 515.263427734375, 422.51470947265625;
+$time_gap: 0.08s;
+
+.anim_a_et_d{
+    animation: fill 1s ease forwards $time_gap*14 +1;
+    filter: drop-shadow( 3px 3px 2px white);
+}
+
+.anim_a_et_d path{
+    stroke: #922B21;
+    stroke-width: 7;
+}
+
+.anim_a_et_d path:hover{
+    animation: blur_hover 2s ease forwards;
+}
+
+@for $i from 1 through 14 {
+    .anim_a_et_d path:nth-child(#{$i}) {
+        stroke-dasharray: nth($letter-ln,$i);
+        stroke-dashoffset: nth($letter-ln,$i);
+        animation: line-anim 2s ease forwards $time_gap*$i;
+    }
+  }
+
+@keyframes line-anim{
+    to{ 
+        stroke-dashoffset:0;    
+    }
+}
+
+@keyframes blur_hover{
+    to{ 
+        filter: blur(4px);
+    }
+}
+
+
+@keyframes fill{
+    from{ 
+        fill:transparent;
+    }
+    to{ 
+        fill:#922B21;       
+    }
+}
+

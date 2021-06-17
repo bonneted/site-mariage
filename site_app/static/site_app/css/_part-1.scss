@@ -1,0 +1,163 @@
+.two{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url(../img/AD_fontainebleau_nobg.png);
+    background-color: #376f1d8f;
+
+    .grey-filter{
+        background-color: rgba(201, 201, 201, 0.8);
+        width: 100%;
+        height: 100%;
+        // backdrop-filter: grayscale(30%);
+    }
+
+
+
+    h1{
+        color: #922B21;
+        text-align: center;
+        margin: 0;
+        width: 40%;
+        transform: translateX(80%);
+        // border-bottom: 4px solid #922B21;
+        padding-top: 4rem;
+        font-family: 'Charm', cursive;
+        font-size: 50px;
+        line-height: 3.5rem;
+
+    }
+}
+
+
+
+.portrait-container{
+    
+
+    /* background:#eee; */
+    display:grid;
+    grid-gap: 0rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". box1 box1 box2 box2 ."
+                         "box3 box3 box4 box4 box5 box5"
+                         ". box6 box6 box7 box7 .";
+    // width: 94vw;
+    padding: 10vw;
+    transition: 1s;
+
+    // max-width:100%;
+    // backdrop-filter: grayscale(50%);
+    
+}
+
+$box: box1,box2,box3,box4,box5,box6,box7;
+
+@for $i from 1 through 7 {
+    .portrait-container .carte:nth-child(#{$i}) {
+        grid-area: nth($box,$i);
+    }
+  }
+.description{
+    position:relative;
+    text-align: justify;
+    transition: all ease 1s;
+    opacity: 0;
+    height:auto;
+    padding: 3%;
+    // border-radius: 5%;
+
+    p{
+        font-size: 12px;
+    }
+
+    h3{
+        color: #922B21;
+        font-size: 20px;
+    }
+}
+
+h3{
+    margin:0;
+}
+.portrait{
+    position:relative;
+    z-index: 1;
+    width: 70%;
+    border: solid 2px #922B21;
+    border-radius: 50%;
+    transition: all ease 0.8s;
+    left:15%;
+    top:15%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6),0 6px 20px 0 rgba(0,0,0,0.6);
+    /* transform:translate(0%,30%) */
+    /* border: solid 0.5em #922B21; */
+}
+
+// .carte:nth-child(2n) img{
+//     // border: solid 2px rgb(22, 22, 112);
+//     /* background: black; */
+// }
+
+
+.carte:hover .description{
+    
+    // color : black; 
+    opacity: 1;
+    top:-5%;
+    height:auto;
+    background:#eee;
+
+
+}
+
+.carte:hover .portrait{
+    top:0%;
+    width: 25%;
+    left:70%;
+}
+/* 
+.carte:hover{
+    grid-template-columns: 20% 1fr;
+} */
+
+.carte {
+    /* border: solid ; */
+    /* place-items: center; */
+    // font-family: 'Nanum Gothic', sans-serif;
+    height: auto;
+    overflow: hidden;
+    padding:1vw;
+    aspect-ratio: 1 / 1;
+    background:auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .portrait-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .description{
+        font-size: 12px;
+    }
+
+    .carte{
+        aspect-ratio: 1 / 1.5;
+        width: 90 vw;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .portrait-container{
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". box1 box1 ."
+                         "box2 box2 box3 box3"
+                         ". box4 box4 ."
+                         "box5 box5 box6 box6"
+                         ". box7 box7 .";
+    }
+}

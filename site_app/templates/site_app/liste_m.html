@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Liste de Mariage</title>
+        {% load static %}
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'site_app/css/liste_m.css' %}">
+      
+      </head>
+<body>
+    <main data-simplebar>
+      <nav class="topnav" id="myTopnav">
+        <a href="index">Accueil</a>
+        <a href="index#rencontre">Notre rencontre</a>
+        <a href="index#temoins">Les Témoins</a>
+        <a href="index#infos">Info pratiques</a>
+        <a href="liste_m" class="active">Liste de mariage</a>
+        <a href="javascript:void(0);" class="icon" onclick="navbar_anim()"><i class="fa fa-bars"></i></a>
+      </nav>
+      
+      <div class="card-container">
+        <h1>Notre liste de mariage</h1>
+        <ul>
+          {% for article in articles %}
+            {% include 'site_app/list_card.html' with article=article %}
+          {% endfor %}
+        </ul>
+      </div>
+      <div id="mypopup" class="popup">
+        <form method="post">
+          {% csrf_token %}
+        <div class="popup-content" id="popup-content">
+
+
+          <span class="close">&times;</span>
+          <div class="popup-wrapper">
+            <div class="image-cont">
+              <h2>Lorem ipsum dolor</h2>
+              <div class="image-bck" style="background-image: url({% static 'site_app/img/liste_m/ski_rando_ali.jpg' %})"></div>
+              <div class="descr-line"></div>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi quis ratione saepe adipisci, voluptas culpa odio corporis rerum recusandae eos!</p>
+            </div>
+            <div class="separateur"></div>
+            <div class="descrip-cont">
+
+              <label for="nom">Votre Nom</label>
+              <input type="text" id="nom" name="nom" required>
+                  
+              <label for="mot">Un petit mot</label>
+              <textarea id="mot" name="mot" style="height:200px"></textarea>
+
+              <label for="montant">Participation</label>
+
+              <div class="montant-container">
+                
+                  <input type="number" id="montant" name="montant" required>
+              
+                
+                <a id="btn-confirmation" onclick="show_confirmation(event)">Offrir</a>
+
+
+                <!-- <p>*En cliquant sur offrir vous allez être redirigé vers notre cagnotte en ligne pour le paiement.</p> -->
+              </div>
+              <input type="checkbox" id="totalite" name="totalite">
+              <label for="totalite" id='lab_tot'>Totalité/Montant restant</label>
+              <input id="nom_article" name="nom_article" type="hidden">
+
+            
+            </div>
+          </div>
+          <div id="mypopupconfirmation" class="popup-content">
+            <h2 class="merci-title">Merci !</h2>
+            <p id="mot-merci">Vous êtes sur le point de nous offrir le cadeau <b>"Chaussures de ski pour Aliénor"</b> pour un montant de <b>200€</b> </p>
+            <p>Un grand merci pour votre générosité ! En cliquant sur confirmer vous allez être redirigé vers notre cagnotte.</p>
+            <div class="signature">Damien & Aliénor</div>
+            <div class="button-container">
+              <a id="confirmation-close">Annuler</a>  
+              <input type="submit" value="Confirmer">
+              
+            </div>
+          </div> 
+
+        </div>
+
+      </form>
+      
+      </div>
+    </main>
+
+</body>
+
+<script type="text/javascript" src="{% static 'site_app/js/liste_m.js' %}"></script>
+
+</html>

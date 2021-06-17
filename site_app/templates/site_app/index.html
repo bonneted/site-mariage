@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Damien & Aliénor</title>
+  {% load static %}
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'site_app/css/index.css' %}">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+</head>
+<body>
+  <main data-simplebar>
+    <a name="accueil" id="accueil"></a>
+    <nav class="topnav" id="myTopnav">
+      <a href="#accueil" class="active">Accueil</a>
+      <a href="#rencontre">Notre rencontre</a>
+      <a href="#temoins" id="temoins_bar">Les Témoins</a>
+      <a href="#infos">Info pratiques</a>
+      <a href="liste_m">Liste de mariage</a>
+      <a href="javascript:void(0);" class="icon" onclick="navbar_anim()"><i class="fa fa-bars"></i></a>
+  </nav>
+    <section class="part one">
+
+      <div class='title-cont'>
+        <svg class="anim_a_et_d" width="60vw" height="6vw" viewBox="0 0 1234 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M69.416 94.68H25.64L17.576 117H3.75201L40.04 17.208H55.16L91.304 117H77.48L69.416 94.68ZM65.672 84.024L47.528 33.336L29.384 84.024H65.672Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M120.223 10.44V117H107.119V10.44H120.223Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M149.325 25.272C146.829 25.272 144.717 24.408 142.989 22.68C141.261 20.952 140.397 18.84 140.397 16.344C140.397 13.848 141.261 11.736 142.989 10.008C144.717 8.28 146.829 7.416 149.325 7.416C151.725 7.416 153.741 8.28 155.373 10.008C157.101 11.736 157.965 13.848 157.965 16.344C157.965 18.84 157.101 20.952 155.373 22.68C153.741 24.408 151.725 25.272 149.325 25.272ZM155.661 38.088V117H142.557V38.088H155.661Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M249.994 74.52C249.994 77.016 249.85 79.656 249.562 82.44H186.49C186.97 90.216 189.61 96.312 194.41 100.728C199.306 105.048 205.21 107.208 212.122 107.208C217.786 107.208 222.49 105.912 226.234 103.32C230.074 100.632 232.762 97.08 234.298 92.664H248.41C246.298 100.248 242.074 106.44 235.738 111.24C229.402 115.944 221.53 118.296 212.122 118.296C204.634 118.296 197.914 116.616 191.962 113.256C186.106 109.896 181.498 105.144 178.138 99C174.778 92.76 173.098 85.56 173.098 77.4C173.098 69.24 174.73 62.088 177.994 55.944C181.258 49.8 185.818 45.096 191.674 41.832C197.626 38.472 204.442 36.792 212.122 36.792C219.61 36.792 226.234 38.424 231.994 41.688C237.754 44.952 242.17 49.464 245.242 55.224C248.41 60.888 249.994 67.32 249.994 74.52ZM236.458 71.784C236.458 66.792 235.354 62.52 233.146 58.968C230.938 55.32 227.914 52.584 224.074 50.76C220.33 48.84 216.154 47.88 211.546 47.88C204.922 47.88 199.258 49.992 194.554 54.216C189.946 58.44 187.306 64.296 186.634 71.784H236.458ZM225.658 15.768L194.986 32.184V22.392L225.658 4.392V15.768Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M305.739 36.648C315.339 36.648 323.115 39.576 329.067 45.432C335.019 51.192 337.995 59.544 337.995 70.488V117H325.035V72.36C325.035 64.488 323.067 58.488 319.131 54.36C315.195 50.136 309.819 48.024 303.003 48.024C296.091 48.024 290.571 50.184 286.443 54.504C282.411 58.824 280.395 65.112 280.395 73.368V117H267.291V38.088H280.395V49.32C282.987 45.288 286.491 42.168 290.907 39.96C295.419 37.752 300.363 36.648 305.739 36.648Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M393.816 118.296C386.424 118.296 379.704 116.616 373.656 113.256C367.704 109.896 363 105.144 359.544 99C356.184 92.76 354.504 85.56 354.504 77.4C354.504 69.336 356.233 62.232 359.689 56.088C363.241 49.848 368.041 45.096 374.089 41.832C380.137 38.472 386.905 36.792 394.393 36.792C401.881 36.792 408.649 38.472 414.697 41.832C420.745 45.096 425.497 49.8 428.953 55.944C432.505 62.088 434.28 69.24 434.28 77.4C434.28 85.56 432.457 92.76 428.809 99C425.257 105.144 420.408 109.896 414.264 113.256C408.12 116.616 401.304 118.296 393.816 118.296ZM393.816 106.776C398.52 106.776 402.937 105.672 407.065 103.464C411.193 101.256 414.505 97.944 417.001 93.528C419.593 89.112 420.888 83.736 420.888 77.4C420.888 71.064 419.641 65.688 417.145 61.272C414.649 56.856 411.385 53.592 407.353 51.48C403.321 49.272 398.953 48.168 394.249 48.168C389.449 48.168 385.032 49.272 381 51.48C377.064 53.592 373.896 56.856 371.496 61.272C369.096 65.688 367.897 71.064 367.897 77.4C367.897 83.832 369.049 89.256 371.353 93.672C373.753 98.088 376.921 101.4 380.857 103.608C384.793 105.72 389.112 106.776 393.816 106.776Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M464.614 50.904C466.918 46.392 470.182 42.888 474.406 40.392C478.726 37.896 483.958 36.648 490.102 36.648V50.184H486.646C471.958 50.184 464.614 58.152 464.614 74.088V117H451.51V38.088H464.614V50.904Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M620.659 117L607.555 103.752C602.659 108.84 597.427 112.632 591.859 115.128C586.291 117.528 580.003 118.728 572.995 118.728C566.083 118.728 559.939 117.48 554.563 114.984C549.283 112.488 545.155 108.936 542.179 104.328C539.299 99.72 537.859 94.344 537.859 88.2C537.859 81.192 539.827 75.048 543.763 69.768C547.795 64.392 553.699 60.168 561.475 57.096C558.403 53.448 556.195 50.088 554.851 47.016C553.507 43.944 552.835 40.584 552.835 36.936C552.835 32.712 553.891 28.92 556.003 25.56C558.211 22.104 561.331 19.416 565.363 17.496C569.395 15.576 574.051 14.616 579.331 14.616C584.515 14.616 589.027 15.624 592.867 17.64C596.707 19.656 599.587 22.488 601.507 26.136C603.427 29.688 604.291 33.672 604.099 38.088H590.995C591.091 34.152 589.987 31.08 587.683 28.872C585.379 26.568 582.403 25.416 578.755 25.416C574.915 25.416 571.795 26.52 569.395 28.728C567.091 30.84 565.939 33.576 565.939 36.936C565.939 39.816 566.707 42.6 568.243 45.288C569.875 47.976 572.563 51.288 576.307 55.224L606.259 85.32L608.851 81.288L618.643 64.872H632.755L620.947 85.32C619.315 88.2 617.395 91.224 615.187 94.392L637.795 117H620.659ZM572.995 107.496C578.179 107.496 582.835 106.488 586.963 104.472C591.187 102.456 595.171 99.336 598.915 95.112L569.395 65.448C557.107 70.152 550.963 77.592 550.963 87.768C550.963 93.432 552.979 98.136 557.011 101.88C561.139 105.624 566.467 107.496 572.995 107.496Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M719.711 16.632C730.655 16.632 740.111 18.696 748.079 22.824C756.143 26.856 762.287 32.664 766.511 40.248C770.831 47.832 772.991 56.76 772.991 67.032C772.991 77.304 770.831 86.232 766.511 93.816C762.287 101.304 756.143 107.064 748.079 111.096C740.111 115.032 730.655 117 719.711 117H688.463V16.632H719.711ZM719.711 106.2C732.671 106.2 742.559 102.792 749.375 95.976C756.191 89.064 759.599 79.416 759.599 67.032C759.599 54.552 756.143 44.808 749.231 37.8C742.415 30.792 732.575 27.288 719.711 27.288H701.567V106.2H719.711Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M785.38 77.256C785.38 69.192 787.012 62.136 790.276 56.088C793.54 49.944 798.003 45.192 803.667 41.832C809.427 38.472 815.812 36.792 822.82 36.792C829.732 36.792 835.732 38.28 840.82 41.256C845.908 44.232 849.699 47.976 852.195 52.488V38.088H865.443V117H852.195V102.312C849.603 106.92 845.715 110.76 840.531 113.832C835.443 116.808 829.491 118.296 822.675 118.296C815.667 118.296 809.331 116.568 803.667 113.112C798.003 109.656 793.54 104.808 790.276 98.568C787.012 92.328 785.38 85.224 785.38 77.256ZM852.195 77.4C852.195 71.448 850.996 66.264 848.596 61.848C846.196 57.432 842.932 54.072 838.804 51.768C834.772 49.368 830.307 48.168 825.411 48.168C820.515 48.168 816.052 49.32 812.02 51.624C807.988 53.928 804.772 57.288 802.372 61.704C799.972 66.12 798.771 71.304 798.771 77.256C798.771 83.304 799.972 88.584 802.372 93.096C804.772 97.512 807.988 100.92 812.02 103.32C816.052 105.624 820.515 106.776 825.411 106.776C830.307 106.776 834.772 105.624 838.804 103.32C842.932 100.92 846.196 97.512 848.596 93.096C850.996 88.584 852.195 83.352 852.195 77.4Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M982.484 36.648C988.628 36.648 994.1 37.944 998.9 40.536C1003.7 43.032 1007.49 46.824 1010.28 51.912C1013.06 57 1014.45 63.192 1014.45 70.488V117H1001.49V72.36C1001.49 64.488 999.524 58.488 995.588 54.36C991.748 50.136 986.516 48.024 979.892 48.024C973.076 48.024 967.652 50.232 963.62 54.648C959.588 58.968 957.572 65.256 957.572 73.512V117H944.612V72.36C944.612 64.488 942.644 58.488 938.708 54.36C934.868 50.136 929.636 48.024 923.012 48.024C916.196 48.024 910.772 50.232 906.74 54.648C902.708 58.968 900.692 65.256 900.692 73.512V117H887.588V38.088H900.692V49.464C903.284 45.336 906.74 42.168 911.06 39.96C915.476 37.752 920.324 36.648 925.604 36.648C932.228 36.648 938.084 38.136 943.172 41.112C948.26 44.088 952.052 48.456 954.548 54.216C956.756 48.648 960.404 44.328 965.492 41.256C970.58 38.184 976.244 36.648 982.484 36.648Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M1042.72 25.272C1040.22 25.272 1038.11 24.408 1036.38 22.68C1034.65 20.952 1033.79 18.84 1033.79 16.344C1033.79 13.848 1034.65 11.736 1036.38 10.008C1038.11 8.28 1040.22 7.416 1042.72 7.416C1045.12 7.416 1047.13 8.28 1048.76 10.008C1050.49 11.736 1051.36 13.848 1051.36 16.344C1051.36 18.84 1050.49 20.952 1048.76 22.68C1047.13 24.408 1045.12 25.272 1042.72 25.272ZM1049.05 38.088V117H1035.95V38.088H1049.05Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M1143.38 74.52C1143.38 77.016 1143.24 79.656 1142.95 82.44H1079.88C1080.36 90.216 1083 96.312 1087.8 100.728C1092.7 105.048 1098.6 107.208 1105.51 107.208C1111.18 107.208 1115.88 105.912 1119.62 103.32C1123.46 100.632 1126.15 97.08 1127.69 92.664H1141.8C1139.69 100.248 1135.46 106.44 1129.13 111.24C1122.79 115.944 1114.92 118.296 1105.51 118.296C1098.02 118.296 1091.3 116.616 1085.35 113.256C1079.5 109.896 1074.89 105.144 1071.53 99C1068.17 92.76 1066.49 85.56 1066.49 77.4C1066.49 69.24 1068.12 62.088 1071.38 55.944C1074.65 49.8 1079.21 45.096 1085.06 41.832C1091.02 38.472 1097.83 36.792 1105.51 36.792C1113 36.792 1119.62 38.424 1125.38 41.688C1131.14 44.952 1135.56 49.464 1138.63 55.224C1141.8 60.888 1143.38 67.32 1143.38 74.52ZM1129.85 71.784C1129.85 66.792 1128.74 62.52 1126.54 58.968C1124.33 55.32 1121.3 52.584 1117.46 50.76C1113.72 48.84 1109.54 47.88 1104.94 47.88C1098.31 47.88 1092.65 49.992 1087.94 54.216C1083.34 58.44 1080.7 64.296 1080.02 71.784H1129.85Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M1199.13 36.648C1208.73 36.648 1216.51 39.576 1222.46 45.432C1228.41 51.192 1231.39 59.544 1231.39 70.488V117H1218.43V72.36C1218.43 64.488 1216.46 58.488 1212.52 54.36C1208.59 50.136 1203.21 48.024 1196.39 48.024C1189.48 48.024 1183.96 50.184 1179.83 54.504C1175.8 58.824 1173.79 65.112 1173.79 73.368V117H1160.68V38.088H1173.79V49.32C1176.38 45.288 1179.88 42.168 1184.3 39.96C1188.81 37.752 1193.75 36.648 1199.13 36.648Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            </svg>           
+    </div>
+    <div class="timer-cont">
+      <div class="countdown_block">      
+        <div class="countdown_digit" id="days">00</div>
+        <div class="countdown_txt">jours</div>
+      </div>
+      <div class="countdown_block">      
+        <div class="countdown_digit" id="hours">00</div>
+        <div class="countdown_txt">heures</div>
+      </div>
+      <div class="countdown_block">      
+        <div class="countdown_digit" id="minutes">00</div>
+        <div class="countdown_txt">minutes</div>
+      </div>
+    </div>
+    </section>
+    <a name="rencontre" id="rencontre"></a>
+    <section class="part rencontre">
+      <div class="wrapper">
+        <h2>Toute une histoire...</h2>
+        <p>Il était une fois une randonnée, quelques pas de danse et un duo de choc à la tête de l'aumônerie. De fil en aiguille, au gré des escapades en montagne et périples à vélo, les sportifs tourtereaux ont peu à peu découvert de multiples facettes de leurs caractères et élaboré des rêves communs. Aussi, c’est avec beaucoup d’amour et tout d’autant d’humour qu’ils ont décidé de s’engager l’un pour l’autre dans cette belle aventure du mariage qui les emmènera sur bien des rivages, le premier n’étant ni moins que le plat pays qui sera bientôt le leur.
+          Une danseuse, un tennisman. Une musicienne, un joueur d’échecs. Deux centraliens, pour la vie, main dans la main.
+          </p>
+      </div>
+
+    </section>
+    <a name="temoins" id="temoins"></a>
+    <section class="part two">
+      <div class="grey-filter">
+      <h1>Les témoins</h1>
+      <div class="portrait-container">
+        <div class="carte">
+          <img class="portrait" src="{% static 'site_app/img/Thomas_R.jpg' %}">
+          <div class="description">
+              <h3>Thomas</h3>
+              <p>Chacun un Thomas dans son équipe : celui-ci est en effet un très bon ami de Damien, rencontré sur les bancs de Ginette. Sportif, cet aventurier contre tout guerrier est toujours partant pour un week-end entre amis, à Paris ou en abbaye. Mais Thomas est avant tout un homme de bon conseil, un ingénieux ingénieur ayant à cœur d’entretenir de belles amitiés. Nul doute qu’il accompagnera Damien et Aliénor pendant encore de longues années !</p>
+          </div>
+      </div>
+      <div class="carte">
+          <img class="portrait" src="{% static 'site_app/img/Mayeul.jpg' %}">
+          <div class="description">
+              <h3>Mayeul</h3>
+              <p>Il est de ces hommes que l’on rencontre et que l’on n’oublie pas, et pour cause : avec son énergie débordante et son humour à toute épreuve, Mayeul ne passe pas inaperçu. Depuis leur rencontre à l’aumônerie de Centrale et leur épique participation à la Sainté-Lyon, Mayeul et Damien s’échangent confidences pour confidences et surtout font les quatre cent coups. Amoureux des belles tirades et des chansons oubliées, Mayeul sera assurément le parfait “love coach” dans cette belle aventure.</p>
+          </div>
+      </div>
+
+
+        <div class="carte">
+            <img class="portrait" src="{% static 'site_app/img/Gaby.jpg' %}">
+            <div class="description">
+                <h3>Gabrielle</h3>
+                <p>Gabrielle et Aliénor, c’est une histoire d’amitié ayant commencé au coin de la rue et qui dure depuis plus de vingt ans. Du bac à sable aux bancs du lycée, des anniversaires endiablés aux camps scouts en passant par les après-midi pâtisserie, les deux amies ne se sont jamais quittées. Brillante étudiante en économie et sciences-politiques, écrivaine à ses heures perdues, toujours attentive aux autres, notre québécoise est un atout de taille pour nos deux tourtereaux.</p>
+            </div>
+        </div>
+
+        <div class="carte">
+          <img class="portrait" src="{% static 'site_app/img/Thomas_C.jpg' %}">
+          <div class="description">
+              <h3>Thomas</h3>
+              <p>Ce bel homme aux faux airs de Jean Dujardin n’est autre que le cousin de la future mariée, avec laquelle il partage de nombreux souvenirs d’enfance au rythme des cousinades. Toujours prêt pour une partie de Catane ou de Richesses du Monde, il se lance volontiers dans un match de ping pong ou sur les pistes de ski. Mineur, c’est là son seul défaut, c’est aussi un jeune marié qui saura être de bon conseil auprès de nos fiancés.</p>
+          </div>
+      </div>
+
+        <div class="carte">
+            <img class="portrait" src="{% static 'site_app/img/Camille.jpg' %}">
+            <div class="description">
+                <h3>Camille</h3>
+                <p>Pèlerinages à Rome, JMJ, scoutisme, Camille et Aliénor ont vécu ensemble des événements profonds qui ont forgé leur amitié depuis le collège. Couturière et danseuse de rock confirmée, Camille est surtout une oreille attentive ayant toujours des conseils avisés. Professionnelle de la santé, elle est elle aussi fraîchement mariée et saura prendre soin de nos futurs jeunes mariés.</p>
+            </div>
+        </div>
+        <div class="carte">
+          <img class="portrait" src="{% static 'site_app/img/Etienne.jpg' %}">
+          <div class="description">
+              <h3>Etienne</h3>
+              <p>Depuis leur rencontre le premier jour de la rentrée de cinquième, Etienne et Damien ont parcouru ensemble de nombreuses étapes de leur vie. Au fil des questions et des grandes discussions, Etienne s’est révélé être le parfait camarade de vie et de foi. Amoureux de la nature, rugbyman, skieur et randonneur... avec de quelles qualités ce futur médecin ne pourra être qu’un excellent allié pour les futurs mariés.</p>
+          </div>
+      </div>
+      <div class="carte">
+        <img class="portrait" src="{% static 'site_app/img/Martin.jpeg' %}">
+        <div class="description">
+            <h3>Martin</h3>
+            <p>Le troisième mousquetaire de Ginette est assurément l’homme d’action du trio ! Martin est en effet aussi sociable que sportif, aussi fêtard que dynamique, aussi centralien que Damien. Mais au-delà d’avoir fait les quatre-cent coups en prépa, les deux compères ont construit une amitié durable avec quelques souvenirs mémorables. Enfin, gageons que ce coron guidera comme il se doit ses amis dans leur nouvelle vie… au Nord !</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+    <a name="infos" id="infos"></a>
+    <section class="part three">
+      <h1>Informations pratiques</h1>
+      <div class="info-container">
+        <div class="info-title"><a href="#infos">Messe</a></div>
+        <div class="info-title"><a href="#infos">Accès</a></div>
+        <div class="info-title"><a href="#infos">Réception</a></div>
+        <div class="info-title"><a href="https://drive.google.com/file/d/1bjlN6Xh_5DK2IaGXDk-kZ_w-CK_AKWdi/view?usp=sharing">Hébergement</a> </div>  
+      </div>
+      <div id="detail-container">
+        <span class="close">&times;</span>
+        <div id="detail-wrapper">
+          <div id='map'></div>
+          <!-- <p class="detail-title">Messe de mariage</p>
+          <p>La messe de mariage sera célébrée le 29 Mai 2021 à 14h en l'église Saint-Etienne d'Auneau (Eure-et-Loire). Le consentment des époux sera reçu par le Père Martin Charcosset</p> -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+</body>
+<script type="text/javascript" src="{% static 'site_app/js/index.js' %}"></script>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3ZavIuBG85zN_jXBBg_a-iGWfcnRzQVk&callback=initMap">
+</script>
+</html>

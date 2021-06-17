@@ -1,0 +1,60 @@
+@import "./navbar";
+@import "./part-0";
+@import "./part_rencontre";
+@import "./part-1";
+@import "./part-2";
+@import "./title_anim";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+$font : 'Roboto Slab', serif;
+
+*{
+    font-family: $font;
+}
+
+.red_bckg{
+    background-color: rgba(146, 43, 33, 1);
+}
+.part{
+    width: 100%;
+    border-color:  #922B21 ;
+    border-width:0 0 10px 0;
+    border-style:solid;
+    margin:0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: calc(100vw - 20px);
+    border-style:solid;
+    border-color:  #922B21 ;
+    border-width:0 0 0 10px;
+
+}
+::-webkit-scrollbar {
+    width: 10px;   
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+::-webkit-scrollbar-track {
+    background: #922B21;
+}
+
+@media only screen and (max-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 0px;   
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        border-width:0;
+    
+    }
+
+}
+
