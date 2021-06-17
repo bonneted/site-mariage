@@ -60,7 +60,6 @@ window.onscroll = function() {scroll_detection()};
 
 var navbar = document.getElementById("myTopnav");
 
-var temoins_position = document.getElementById("temoins").getBoundingClientRect()
 
 function get_Yposition(el){
   var el_top = document.querySelector(el.getAttribute('href')+'-top').getBoundingClientRect();
