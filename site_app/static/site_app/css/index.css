@@ -653,19 +653,25 @@ h3 {
 }
 
 @-webkit-keyframes fill {
-  from {
+  0% {
+    fill: #922B21;
+  }
+  1% {
     fill: transparent;
   }
-  to {
+  100% {
     fill: #922B21;
   }
 }
 
 @keyframes fill {
-  from {
+  0% {
+    fill: #922B21;
+  }
+  1% {
     fill: transparent;
   }
-  to {
+  100% {
     fill: #922B21;
   }
 }

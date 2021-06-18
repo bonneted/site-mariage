@@ -25,6 +25,7 @@ $time_gap: 0.08s;
   }
 
 @keyframes line-anim{
+
     to{ 
         stroke-dashoffset:0;    
     }
@@ -38,10 +39,13 @@ $time_gap: 0.08s;
 
 
 @keyframes fill{
-    from{ 
+    0%{ 
+        fill:#922B21;       
+    }
+    1%{ 
         fill:transparent;
     }
-    to{ 
+    100%{ 
         fill:#922B21;       
     }
 }
