@@ -43,7 +43,7 @@ def liste_m(request):
                         montant = montant,
                         totalite = totalite=='on',
                     )
-        return HttpResponseRedirect("https://lydia-app.com/collect/25204-un-cafe-pour-damien")
+        return HttpResponseRedirect("https://lydia-app.com/collect/31790-liste-de-mariage-damien-alienor/fr")
 
     else :
 
