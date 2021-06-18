@@ -101,18 +101,19 @@ h1{
   p{
     text-align: center;
     margin: 10px 10% 10px 10%;
+
   }
   .merci-title{
     color: #922B21;
     font-size: 50px;
-    font-family: 'Allura', cursive;
+    font-family: 'Charm', cursive;
     text-align: center;
     margin: 20px;
   }
 
   .signature{
     color: #922B21;
-    font-family: 'Allura', cursive;
+    font-family: 'Charm', cursive;
     text-align: end;
     font-size: 30px;
     padding-right: 5rem;
@@ -154,7 +155,9 @@ h1{
 
   .close {
     color: #aaa;
-    float: right;
+    position:absolute;
+    top: 0;
+    right: 0;
     font-size: 32px;
     font-weight: bold;
     transform: translateY(-8px);
@@ -228,7 +231,7 @@ label{
 
 
     p{
-        margin-top: 5px;
+        margin-top: 1rem;
         color: rgb(122, 122, 122);
         text-align: center;
     }
@@ -253,6 +256,7 @@ label{
   @media only screen and (max-width: 768px) {
     .popup-content{
       width: 100%;
+      border: 0;
 
     }
 

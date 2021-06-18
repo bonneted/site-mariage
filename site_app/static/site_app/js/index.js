@@ -132,7 +132,7 @@ all_title.forEach(anchor => {
       modal_wrapper.innerHTML =  "<p class='detail-title'>Accès</p><p>En voiture : environ 1h depuis Paris et 4h30 depuis Lyon</p><p>En train : La gare d'Auneau est située à 5km de l'église, et accessible depuis la gare Paris-Austerlitz.</p>"
       
     } else if (type_info=="Réception"){
-      modal_wrapper.innerHTML =  "<p class='detail-title'>Réception</p><p>Nous serons heureux de vous retrouver à l'issue de la cérémonie au Château de Denonville.</p>"
+      modal_wrapper.innerHTML =  "<p class='detail-title'>Réception</p><p>Nous serons heureux de vous retrouver à l'issue de la cérémonie au château de Denonville.</p>"
       
     }
 

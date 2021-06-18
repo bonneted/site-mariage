@@ -17,8 +17,7 @@
         color: #922B21;
         text-align: center;
         margin: 0;
-        width: 40%;
-        transform: translateX(80%);
+        width: 100%;
         // border-bottom: 4px solid #922B21;
         padding-top: 4rem;
         font-family: 'Charm', cursive;
@@ -42,7 +41,7 @@
                          "box3 box3 box4 box4 box5 box5"
                          ". box6 box6 box7 box7 .";
     // width: 94vw;
-    padding: 10vw;
+    padding: 30px 10vw 30px 10vw;
     transition: 1s;
 
     // max-width:100%;
@@ -88,7 +87,7 @@ h3{
     transition: all ease 0.8s;
     left:15%;
     top:15%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6),0 6px 20px 0 rgba(0,0,0,0.6);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6),0 6px 10px 0 rgba(0,0,0,0.6);
     /* transform:translate(0%,30%) */
     /* border: solid 0.5em #922B21; */
 }
@@ -135,6 +134,9 @@ h3{
     .portrait-container{
         display: flex;
         flex-direction: column;
+        padding: 70px 30px 70px 30px;
+
+
         
     }
     .description{
@@ -143,7 +145,12 @@ h3{
 
     .carte{
         aspect-ratio: 1 / 1.5;
-        width: 90 vw;
+        // width: 90 vw;
+    }
+    .portrait{
+
+        width: 90%;
+        left: 5%;
     }
     
 }
@@ -158,4 +165,6 @@ h3{
                          "box5 box5 box6 box6"
                          ". box7 box7 .";
     }
+
+
 }

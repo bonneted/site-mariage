@@ -429,14 +429,14 @@ h1 {
 #mypopupconfirmation .merci-title {
   color: #922B21;
   font-size: 50px;
-  font-family: 'Allura', cursive;
+  font-family: 'Charm', cursive;
   text-align: center;
   margin: 20px;
 }
 
 #mypopupconfirmation .signature {
   color: #922B21;
-  font-family: 'Allura', cursive;
+  font-family: 'Charm', cursive;
   text-align: end;
   font-size: 30px;
   padding-right: 5rem;
@@ -509,7 +509,9 @@ h1 {
 
 .close {
   color: #aaa;
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
   font-size: 32px;
   font-weight: bold;
   -webkit-transform: translateY(-8px);
@@ -603,7 +605,7 @@ label {
 }
 
 .image-cont p {
-  margin-top: 5px;
+  margin-top: 1rem;
   color: #7a7a7a;
   text-align: center;
 }
@@ -623,6 +625,7 @@ label {
 @media only screen and (max-width: 768px) {
   .popup-content {
     width: 100%;
+    border: 0;
   }
   .popup-wrapper {
     display: block;

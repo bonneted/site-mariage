@@ -64,11 +64,15 @@
 }
 .close {
     color: rgb(233, 233, 233);
-    float: right;
+    position:absolute;
+    top: 0;
+    right: 0;
+    // float: right;
     font-size: 32px;
     font-weight: bold;
     transform: translateY(-8px);
     margin: 20px;
+    z-index: 10;
   }
   
   .close:hover,
