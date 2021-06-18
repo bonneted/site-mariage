@@ -512,7 +512,6 @@ h3 {
 }
 
 .anim_a_et_d {
-  fill: #922B21;
   -webkit-animation: fill 1s ease forwards 2.12s;
           animation: fill 1s ease forwards 2.12s;
   -webkit-filter: drop-shadow(3px 3px 2px white);
