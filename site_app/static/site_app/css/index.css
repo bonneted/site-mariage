@@ -181,6 +181,10 @@
   margin: 1rem;
 }
 
+.rencontre .wrapper p {
+  text-align: justify;
+}
+
 @media only screen and (max-width: 768px) {
   .wrapper {
     width: 80% !important;
