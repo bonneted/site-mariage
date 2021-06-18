@@ -359,8 +359,18 @@ body {
   padding: 100px 10vw 0 10vw;
 }
 
+.card-container p {
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.card-container p a {
+  color: #922B21;
+}
+
 h1 {
-  margin-bottom: 50px;
+  margin: 10px 0 50px 0;
   color: #922B21;
   text-align: center;
   width: 60%;
