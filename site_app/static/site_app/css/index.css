@@ -73,6 +73,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 40vh;
+  width: 60vw;
+  margin-left: 20vw;
 }
 
 .timer-cont {
@@ -133,6 +135,17 @@
     padding-top: 30vh;
     margin-left: 10%;
     width: 80%;
+  }
+  .title-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 30vh;
+    width: 80vw;
+    margin-left: 10vw;
   }
 }
 
