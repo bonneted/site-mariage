@@ -123,10 +123,6 @@
 
 .one {
   height: calc(100vh - 10px);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
   background-image: url(../img/dali_marseille_bw.jpg);
 }
 
@@ -150,10 +146,6 @@
 }
 
 .rencontre {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
   background-image: url(../img/rencontre_nobg.png);
   background-color: #216b9286;
   display: -webkit-box;
@@ -196,10 +188,6 @@
 }
 
 .two {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
   background-image: url(../img/dali_fontainebleau_nobg.png);
   background-color: #376f1d8f;
 }
@@ -386,10 +374,6 @@ h3 {
 
 .three {
   position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
   background-image: url(../img/denonville_bw_l.png);
 }
 
@@ -685,6 +669,10 @@ h3 {
   border-style: solid;
   margin: 0;
   padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 body {
@@ -717,6 +705,9 @@ body {
     padding: 0;
     width: 100vw;
     border-width: 0;
+  }
+  .part {
+    background-attachment: scroll;
   }
 }
 /*# sourceMappingURL=index.css.map */
