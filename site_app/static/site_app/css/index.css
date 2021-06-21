@@ -706,7 +706,7 @@ body {
     width: 100vw;
     border-width: 0;
   }
-  .part {
+  .one {
     background-attachment: scroll;
     scroll-snap-align: start;
   }
