@@ -4,8 +4,8 @@ $time_gap: 0.08s;
 
 .anim_a_et_d{
     fill:#922B21;   
-    animation: fill  $time_gap*14 +1.5 forwards;
-    animation-timing-function: linear,ease-out;
+    // animation: fill  $time_gap*14 +1.5 forwards;
+    // animation-timing-function: linear,ease-out;
     filter: drop-shadow( 3px 3px 2px white);
 }
 
@@ -20,9 +20,9 @@ $time_gap: 0.08s;
 
 @for $i from 1 through 14 {
     .anim_a_et_d path:nth-child(#{$i}) {
-        stroke-dasharray: nth($letter-ln,$i);
-        stroke-dashoffset: nth($letter-ln,$i);
-        animation: line-anim 2s ease forwards $time_gap*$i;
+        // stroke-dasharray: nth($letter-ln,$i);
+        // stroke-dashoffset: nth($letter-ln,$i);
+        // animation: line-anim 2s ease forwards $time_gap*$i;
     }
   }
 
