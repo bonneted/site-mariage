@@ -27,7 +27,6 @@ $font : 'Roboto Slab', serif;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    
 }
 body{
     margin: 0;
@@ -38,6 +37,7 @@ body{
     border-width:0 0 0 10px;
 
 }
+
 ::-webkit-scrollbar {
     width: 10px;   
 }
@@ -63,6 +63,13 @@ body{
     }
     .part{
         background-attachment: scroll;
+        scroll-snap-align: start;
+
+    }
+    .section-container{
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100vh;
     }
 }
 

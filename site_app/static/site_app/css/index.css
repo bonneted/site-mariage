@@ -708,6 +708,13 @@ body {
   }
   .part {
     background-attachment: scroll;
+    scroll-snap-align: start;
+  }
+  .section-container {
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
   }
 }
 /*# sourceMappingURL=index.css.map */
