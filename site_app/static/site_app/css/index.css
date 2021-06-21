@@ -711,8 +711,8 @@ body {
     scroll-snap-align: start;
   }
   .section-container {
-    -ms-scroll-snap-type: y mandatory;
-        scroll-snap-type: y mandatory;
+    -ms-scroll-snap-type: y proximity;
+        scroll-snap-type: y proximity;
     overflow-y: scroll;
     height: 100vh;
   }
