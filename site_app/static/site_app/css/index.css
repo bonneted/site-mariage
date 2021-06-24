@@ -498,6 +498,10 @@ h3 {
 
 .anim_a_et_d {
   fill: #922B21;
+  -webkit-animation: fill 2.62s forwards;
+          animation: fill 2.62s forwards;
+  -webkit-animation-timing-function: linear,ease-out;
+          animation-timing-function: linear,ease-out;
   -webkit-filter: drop-shadow(3px 3px 2px white);
           filter: drop-shadow(3px 3px 2px white);
 }
@@ -510,6 +514,104 @@ h3 {
 .anim_a_et_d path:hover {
   -webkit-animation: blur_hover 2s ease forwards;
           animation: blur_hover 2s ease forwards;
+}
+
+.anim_a_et_d path:nth-child(1) {
+  stroke-dasharray: 490.29211;
+  stroke-dashoffset: 490.29211;
+  -webkit-animation: line-anim 2s ease forwards 0.08s;
+          animation: line-anim 2s ease forwards 0.08s;
+}
+
+.anim_a_et_d path:nth-child(2) {
+  stroke-dasharray: 239.328;
+  stroke-dashoffset: 239.328;
+  -webkit-animation: line-anim 2s ease forwards 0.16s;
+          animation: line-anim 2s ease forwards 0.16s;
+}
+
+.anim_a_et_d path:nth-child(3) {
+  stroke-dasharray: 239.80885;
+  stroke-dashoffset: 239.80885;
+  -webkit-animation: line-anim 2s ease forwards 0.24s;
+          animation: line-anim 2s ease forwards 0.24s;
+}
+
+.anim_a_et_d path:nth-child(4) {
+  stroke-dasharray: 606.78369;
+  stroke-dashoffset: 606.78369;
+  -webkit-animation: line-anim 2s ease forwards 0.32s;
+          animation: line-anim 2s ease forwards 0.32s;
+}
+
+.anim_a_et_d path:nth-child(5) {
+  stroke-dasharray: 422.50064;
+  stroke-dashoffset: 422.50064;
+  -webkit-animation: line-anim 2s ease forwards 0.4s;
+          animation: line-anim 2s ease forwards 0.4s;
+}
+
+.anim_a_et_d path:nth-child(6) {
+  stroke-dasharray: 433.77341;
+  stroke-dashoffset: 433.77341;
+  -webkit-animation: line-anim 2s ease forwards 0.48s;
+          animation: line-anim 2s ease forwards 0.48s;
+}
+
+.anim_a_et_d path:nth-child(7) {
+  stroke-dasharray: 246.02444;
+  stroke-dashoffset: 246.02444;
+  -webkit-animation: line-anim 2s ease forwards 0.56s;
+          animation: line-anim 2s ease forwards 0.56s;
+}
+
+.anim_a_et_d path:nth-child(8) {
+  stroke-dasharray: 625.39032;
+  stroke-dashoffset: 625.39032;
+  -webkit-animation: line-anim 2s ease forwards 0.64s;
+          animation: line-anim 2s ease forwards 0.64s;
+}
+
+.anim_a_et_d path:nth-child(9) {
+  stroke-dasharray: 571.5777;
+  stroke-dashoffset: 571.5777;
+  -webkit-animation: line-anim 2s ease forwards 0.72s;
+          animation: line-anim 2s ease forwards 0.72s;
+}
+
+.anim_a_et_d path:nth-child(10) {
+  stroke-dasharray: 506.44504;
+  stroke-dashoffset: 506.44504;
+  -webkit-animation: line-anim 2s ease forwards 0.8s;
+          animation: line-anim 2s ease forwards 0.8s;
+}
+
+.anim_a_et_d path:nth-child(11) {
+  stroke-dasharray: 668.78381;
+  stroke-dashoffset: 668.78381;
+  -webkit-animation: line-anim 2s ease forwards 0.88s;
+          animation: line-anim 2s ease forwards 0.88s;
+}
+
+.anim_a_et_d path:nth-child(12) {
+  stroke-dasharray: 239.80064;
+  stroke-dashoffset: 239.80064;
+  -webkit-animation: line-anim 2s ease forwards 0.96s;
+          animation: line-anim 2s ease forwards 0.96s;
+}
+
+.anim_a_et_d path:nth-child(13) {
+  stroke-dasharray: 515.26343;
+  stroke-dashoffset: 515.26343;
+  -webkit-animation: line-anim 2s ease forwards 1.04s;
+          animation: line-anim 2s ease forwards 1.04s;
+}
+
+.anim_a_et_d path:nth-child(14) {
+  stroke-dasharray: 422.51471;
+  stroke-dashoffset: 422.51471;
+  -webkit-animation: line-anim 2s ease forwards 1.12s;
+          animation: line-anim 2s ease forwards 1.12s;
 }
 
 @-webkit-keyframes line-anim {
