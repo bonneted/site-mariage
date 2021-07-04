@@ -80,11 +80,14 @@ WSGI_APPLICATION = 'site_mariage.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql', # on utilise l'adaptateur postgresql
+        'NAME': 'mariage-app', # le nom de notre base de donnees creee precedemment
+        'USER': 'postgres', # attention : remplacez par votre nom d'utilisateur
+        'PASSWORD': 'dali2021',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
-
 if os.environ.get('ENV') == 'PRODUCTION':
 
     # Static files settings

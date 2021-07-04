@@ -9,10 +9,11 @@ class Article(models.Model):
         return self.nom
 
     nom = models.CharField(max_length=200)
-    description = models.TextField()
+    description = models.TextField(null=True)
     prix = models.IntegerField()
     deja_paye = models.IntegerField(default=0)
     image = models.CharField(max_length=200,default='image.png')
+    categorie = models.CharField(max_length=200,default='Autre')
 
 class Cadeau(models.Model):
 

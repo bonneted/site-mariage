@@ -20,6 +20,4 @@ from django.views.generic.base import RedirectView
 urlpatterns = [
     path("", include("site_app.urls")),
     path('admin/', admin.site.urls),
-    path(r'^.*$', RedirectView.as_view(pattern_name='homepage', permanent=False)),
-
 ]
