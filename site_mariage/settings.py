@@ -88,6 +88,7 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
 if os.environ.get('ENV') == 'PRODUCTION':
 
     # Static files settings
