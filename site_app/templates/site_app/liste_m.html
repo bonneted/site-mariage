@@ -29,11 +29,16 @@
       <div class="card-container">
         <h1>Notre liste de mariage</h1>
         <p>Si votre présence le jour J reste le plus beau cadeau, voici quelques idées pour nous aider à nous installer en Belgique. Vous pouvez également participer librement en accédant directement à notre <a href="https://lydia-app.com/collect/31790-liste-de-mariage-damien-alienor/fr">cagnotte en ligne</a>.</p>
+        <div class="card-categorie">
+          <i class="fa fa-angle-down" onclick="hide_categorie(event)" ></i>
+
+          <h2>Sport & Loisir</h2>
         <ul>
           {% for article in articles %}
             {% include 'site_app/list_card.html' with article=article %}
           {% endfor %}
         </ul>
+      </div>
       </div>
       <div id="mypopup" class="popup">
         <form method="post">
@@ -45,7 +50,7 @@
           <div class="popup-wrapper">
             <div class="image-cont">
               <h2>Lorem ipsum dolor</h2>
-              <div class="image-bck" style="background-image: url({% static 'site_app/img/liste_m/ski_rando_ali.jpg' %})"></div>
+              <div class="image-bck" style="background-image: url({{ article.photo.url }})"></div>
               <div class="descr-line"></div>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi quis ratione saepe adipisci, voluptas culpa odio corporis rerum recusandae eos!</p>
             </div>

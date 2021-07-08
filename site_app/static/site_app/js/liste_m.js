@@ -86,3 +86,17 @@ function show_confirmation() {
 function hide_confirmation() {
   document.getElementById("mypopupconfirmation").classList.remove("confirmation-visible");
 }
+
+function hide_categorie(event){
+  var categorie =  event.currentTarget.parentNode;
+
+  if (categorie.classList.contains("hide_categorie")) {
+    categorie.classList.remove("hide_categorie");
+    event.currentTarget.style.transform= 'rotate(0deg)';
+
+  } else {
+    categorie.classList.add("hide_categorie");
+    event.currentTarget.style.transform= 'rotate(90deg)';
+
+  }
+}

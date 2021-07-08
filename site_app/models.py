@@ -12,8 +12,8 @@ class Article(models.Model):
     description = models.TextField(null=True)
     prix = models.IntegerField()
     deja_paye = models.IntegerField(default=0)
-    image = models.CharField(max_length=200,default='image.png')
     categorie = models.CharField(max_length=100,default='Autre')
+    photo = models.ImageField(upload_to='images/', default='default_cadeau.jpg')
 
 class Cadeau(models.Model):
 

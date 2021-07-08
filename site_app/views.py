@@ -22,7 +22,7 @@ def index(request):
     return render(request, 'site_app/index.html')
 
 def liste_m(request):
-    articles = Article.objects.all()
+    articles = Article.objects.all().order_by('-categorie')
 
     if request.method == 'POST':
 

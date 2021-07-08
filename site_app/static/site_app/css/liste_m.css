@@ -689,4 +689,41 @@ label {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+
+.card-categorie {
+  border-top: 3px solid #922B21;
+  border-bottom: 3px solid #922B21;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  max-height: 3 vh;
+  position: relative;
+  color: #922B21;
+}
+
+.card-categorie h2 {
+  padding: 0.6rem;
+  margin: 0;
+  color: inherit;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.card-categorie i {
+  color: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.hide_categorie {
+  max-height: 3.2rem;
+}
 /*# sourceMappingURL=liste_m.css.map */

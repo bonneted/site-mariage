@@ -1,7 +1,7 @@
 {% load static %}
 {% load prog_calcul %}
 
-<li class="booking-card" style="background-image: url({% static 'site_app/img/liste_m/' %}{{ article.image }})">
+<li class="booking-card" style="background-image: url({{ article.photo.url }})">
     <div class="book-container">
       
         {% if article.prix <= article.deja_paye %}
@@ -10,7 +10,7 @@
         <div class="content">
           <button class="btn offrir" onclick="show_popup(event)">Offrir</button>
           <div class='data_nom' id="{{ article.nom }}" display=none></div>
-          <div class='data_image' id="url({% static 'site_app/img/liste_m/' %}{{ article.image }})" display=none></div>
+          <div class='data_image' id="url({{ article.photo.url }})" display=none></div>
           <div class='data_description' id="{{ article.description }}" display=none></div>
           <div class='data_prix' id="{{ article.prix }}" display=none></div>
           <div class='data_deja_paye' id="{{ article.deja_paye }}" display=none></div>
