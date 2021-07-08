@@ -25,20 +25,24 @@
         <a href="liste_m" class="active">Liste de mariage</a>
         <a href="javascript:void(0);" class="icon" onclick="navbar_anim()"><i class="fa fa-bars"></i></a>
       </nav>
-      
       <div class="card-container">
         <h1>Notre liste de mariage</h1>
         <p>Si votre présence le jour J reste le plus beau cadeau, voici quelques idées pour nous aider à nous installer en Belgique. Vous pouvez également participer librement en accédant directement à notre <a href="https://lydia-app.com/collect/31790-liste-de-mariage-damien-alienor/fr">cagnotte en ligne</a>.</p>
+        {% for categorie in categories %}
         <div class="card-categorie">
           <i class="fa fa-angle-down" onclick="hide_categorie(event)" ></i>
 
-          <h2>Sport & Loisir</h2>
-        <ul>
-          {% for article in articles %}
-            {% include 'site_app/list_card.html' with article=article %}
-          {% endfor %}
-        </ul>
+          <h2 onclick="hide_categorie(event)">{{categorie.categorie}}</h2>
+          <ul>
+
+            {% for article in articles %}
+              {% if article.categorie == categorie.categorie %}
+                {% include 'site_app/list_card.html' with article=article %}
+              {% endif %}
+            {% endfor %}
+          </ul>
       </div>
+      {% endfor %}
       </div>
       <div id="mypopup" class="popup">
         <form method="post">

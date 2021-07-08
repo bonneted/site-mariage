@@ -34,11 +34,13 @@ body{
 }
 
 .card-container{
-    padding: 100px 10vw 0 10vw;   
+    padding: 100px 10vw 0 10vw; 
+    // border-bottom: 3px solid #922B21;  
     p{
       width:80%;
       text-align: center;
       margin-left: 10%;
+      margin-bottom: 50px;
 
       a{
         color: #922B21;
@@ -321,15 +323,12 @@ label{
 
 .card-categorie{
   border-top: 3px solid #922B21;
-  border-bottom: 3px solid #922B21;
+  // border-bottom: 3px solid #922B21;
   overflow: hidden;
   transition: all 0.5s ease-out;
   max-height: 3 vh;
   position: relative;
   color: #922B21;
-
-
-
 
   h2{
     padding: 0.6rem;
@@ -351,8 +350,27 @@ label{
     transform-origin: center;    
   }
 
+  ul{
+    width: 98%;
+    margin-left: 1%;
+  }
+
 
 }
 .hide_categorie{
-  max-height: 3.2rem;
+  > * {
+    // font-size: 0;
+    margin: 0;
+    // opacity: 0;
+    padding: 0;
+    height:0;
+    /* fade out, then shrink */
+      // transition: opacity .25s,
+      //             // margin  .25s,
+      //             // padding .25s,
+      //             height 10s;
+    }
+                
+  }
+  // max-height: 3.2rem;
 }

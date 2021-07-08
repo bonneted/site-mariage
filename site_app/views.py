@@ -22,7 +22,8 @@ def index(request):
     return render(request, 'site_app/index.html')
 
 def liste_m(request):
-    articles = Article.objects.all().order_by('-categorie')
+    articles = Article.objects.all()
+    categories = Article.objects.values('categorie').distinct().order_by('-categorie')
 
     if request.method == 'POST':
 
@@ -49,6 +50,7 @@ def liste_m(request):
 
         context = {
             'articles': articles,
+            'categories': categories,
             }
 
         return render(request, 'site_app/liste_m.html',context)

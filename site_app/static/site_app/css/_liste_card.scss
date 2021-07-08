@@ -63,7 +63,7 @@ ul{
   width: 100%;
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   margin-bottom: 0;
 
   list-style: none;
@@ -88,9 +88,7 @@ ul{
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: $grey2;
-    text-align: center;
-    color: $blue;
-    
+    text-align: center;    
     transition: .3s;
     
     &::before{

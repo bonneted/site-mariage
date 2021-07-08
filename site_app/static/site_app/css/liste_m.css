@@ -16,8 +16,8 @@ ul {
   display: -ms-grid;
   display: grid;
   grid-gap: 2rem;
-  -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  -ms-grid-columns: (minmax(230px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   margin-bottom: 0;
   list-style: none;
   padding: 0;
@@ -46,7 +46,6 @@ ul .booking-card {
   background-size: 100%;
   background-color: #f0f0f0;
   text-align: center;
-  color: #0a4870;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -363,6 +362,7 @@ body {
   width: 80%;
   text-align: center;
   margin-left: 10%;
+  margin-bottom: 50px;
 }
 
 .card-container p a {
@@ -692,7 +692,6 @@ label {
 
 .card-categorie {
   border-top: 3px solid #922B21;
-  border-bottom: 3px solid #922B21;
   overflow: hidden;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -723,7 +722,22 @@ label {
           transform-origin: center;
 }
 
-.hide_categorie {
-  max-height: 3.2rem;
+.card-categorie ul {
+  width: 98%;
+  margin-left: 1%;
+}
+
+.hide_categorie ul {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  /* fade out, then shrink */
+  -webkit-transition: opacity .25s, margin  .25s, padding .25s;
+  transition: opacity .25s, margin  .25s, padding .25s;
+}
+
+.hide_categorie ul li {
+  -webkit-transition: margin  .25s, padding .25s, height .25s;
+  transition: margin  .25s, padding .25s, height .25s;
 }
 /*# sourceMappingURL=liste_m.css.map */

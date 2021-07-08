@@ -89,14 +89,14 @@ function hide_confirmation() {
 
 function hide_categorie(event){
   var categorie =  event.currentTarget.parentNode;
-
+  var arrow = event.currentTarget.parentNode.getElementsByTagName('i')[0];
   if (categorie.classList.contains("hide_categorie")) {
     categorie.classList.remove("hide_categorie");
-    event.currentTarget.style.transform= 'rotate(0deg)';
+    arrow.style.transform= 'rotate(0deg)';
 
   } else {
     categorie.classList.add("hide_categorie");
-    event.currentTarget.style.transform= 'rotate(90deg)';
+    arrow.style.transform= 'rotate(90deg)';
 
   }
 }
