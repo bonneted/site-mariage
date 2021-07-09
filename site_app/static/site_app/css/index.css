@@ -717,4 +717,45 @@ body {
     border-width: 0;
   }
 }
+
+.liste-redirection {
+  background-color: #922B21;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
+.liste-redirection p {
+  margin: 0;
+  padding: 0;
+  color: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  font-size: 1.2rem;
+}
+
+.liste-redirection i {
+  margin-left: 1.6rem;
+  font-size: 2rem;
+  color: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.liste-redirection:hover p {
+  -webkit-transform: translateX(0.8rem);
+          transform: translateX(0.8rem);
+}
+
+.liste-redirection:hover i {
+  -webkit-transform: translateX(1.6rem);
+          transform: translateX(1.6rem);
+}
 /*# sourceMappingURL=index.css.map */
