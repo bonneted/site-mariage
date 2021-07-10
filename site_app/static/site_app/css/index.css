@@ -147,6 +147,7 @@
 }
 
 .rencontre {
+  position: relative;
   background-image: url(../img/rencontre_nobg.png);
   background-color: #216b9286;
   display: -webkit-box;
@@ -176,6 +177,13 @@
 
 .rencontre .wrapper p {
   text-align: justify;
+}
+
+.hidden-charlie {
+  position: absolute;
+  bottom: 0%;
+  right: 1%;
+  width: 50px;
 }
 
 @media only screen and (max-width: 768px) {

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
 
 .rencontre{
-
+    position: relative;
     background-image: url(../img/rencontre_nobg.png);
     background-color: #216b9286;
     display: flex;
@@ -29,6 +29,14 @@
     }
 
   }
+
+.hidden-charlie{
+    // transform: rotateZ(20deg) translateY(6px);
+    position: absolute;
+    bottom: 0%;
+    right:1%;
+    width: 50px;
+}
 
   @media only screen and (max-width: 768px) {
     .wrapper{
