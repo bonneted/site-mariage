@@ -38,7 +38,7 @@
           <ul>
 
             {% for article in articles %}
-              {% if article.categorie == categorie.categorie and article.nom != 'Participation libre' %}
+              {% if article.categorie == categorie.categorie and article.nom %}
                 {% include 'site_app/list_card.html' with article=article %}
               {% endif %}
             {% endfor %}
