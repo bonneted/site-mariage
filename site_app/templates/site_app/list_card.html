@@ -8,7 +8,7 @@
         <p class="deja-offert">Offert</button>
         {% else %}
         <div class="content">
-          <button class="btn offrir" onclick="show_popup(event)">Offrir</button>
+          <button class="btn offrir" onclick="show_popup(event.currentTarget)">Offrir</button>
           <div class='data_nom' id="{{ article.nom }}" display=none></div>
           <div class='data_image' id="url({{ article.photo.url }})" display=none></div>
           <div class='data_description' id="{{ article.description }}" display=none></div>

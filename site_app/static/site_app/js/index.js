@@ -126,7 +126,7 @@ all_title.forEach(anchor => {
     console.log(type_info)
 
     if (type_info=="Messe"){
-      modal_wrapper.innerHTML =  "<p class='detail-title'>Messe de mariage</p><p>La messe de mariage sera célébrée le 9 Octobre 2021 à 14h en l'église Saint-Etienne d'Auneau (Eure-et-Loire). Le consentment des époux sera reçu par le Père Martin Charcosset</p>"
+      modal_wrapper.innerHTML =  "<p class='detail-title'>Messe de mariage</p><p>La messe de mariage sera célébrée le 9 Octobre 2021 à 14h en l'église Saint-Etienne d'Auneau (Eure-et-Loire). Le consentement des époux sera reçu par le Père Martin Charcosset</p>"
     } else if (type_info=="Accès") {
 
       modal_wrapper.innerHTML =  "<p class='detail-title'>Accès</p><p>En voiture : environ 1h depuis Paris et 4h30 depuis Lyon</p><p>En train : La gare d'Auneau est située à 5km de l'église, et accessible depuis la gare Paris-Austerlitz.</p>"

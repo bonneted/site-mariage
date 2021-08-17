@@ -22,9 +22,8 @@ var span = document.getElementsByClassName("close")[0];
 var deja_paye = 0;
 var prix = 0;
 
-function show_popup(event) {
-  let parent_block =  event.currentTarget.parentNode;
-  let ancestor_block = parent_block.parentNode;
+function show_popup(currentTarget) {
+  let parent_block =  currentTarget.parentNode;
   console.log(parent_block)
   let popup = document.getElementById("popup-content")
 
@@ -40,6 +39,18 @@ function show_popup(event) {
   popup.querySelector(".image-bck").style.backgroundImage = image.id;
   document.getElementById("nom_article").value =  nom.id;
   modal.style.display = "grid";
+
+  if (nom.id == 'Participation libre'){
+    document.getElementById("totalite").disabled = true;
+  } else{
+    document.getElementById("totalite").disabled = false;
+  }
+}
+
+function show_participation() {
+  let participation_block = document.getElementById("Participation libre")  
+  show_popup(participation_block)
+
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -79,7 +90,6 @@ function show_confirmation() {
   let popup = document.getElementById("popup-content");
   var nom = popup.querySelector("h2").innerHTML;
   var prix =  document.getElementById("montant").value;
-  console.log(prix)
 
   document.getElementById('mot-merci').innerHTML="Vous êtes sur le point de nous offrir le cadeau <b>"+nom+"</b >, pour un montant de <b>"+prix+"€</b>." 
 }
