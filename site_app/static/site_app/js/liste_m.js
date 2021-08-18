@@ -110,7 +110,6 @@ function hide_categorie(event){
 
   }
 }
-let participation_block = document.getElementById("Participation libre")  
-
-participation_block.parentNode.querySelector(".informations-container").innerHTML =  "<h2 class='title'>Participation libre</h2>"
+let participation_block = document.getElementById("Participation libre").parentNode.parentNode.parentNode  
+participation_block.querySelector(".informations-container").innerHTML =  "<h2 class='title'>Participation libre</h2>"
 
