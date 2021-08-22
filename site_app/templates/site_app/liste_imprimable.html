@@ -29,7 +29,7 @@
         </tr>
         {% for categorie in categories %}
             {% for article in articles %}
-                {% if article.categorie == categorie.categorie and article.nom %}
+                {% if article.categorie == categorie.categorie and article.nom != "Participation libre" %}
                 <tr>
                     <th><img width="80px" src={{ article.photo.url }}></th>
                     <th>{{ article.nom }}</th>
