@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Liste de Mariage</title>
+        {% load static %}
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'site_app/css/liste_imp.css' %}">
+        <link rel="icon" href="{% static 'site_app/img/D_A.png' %}">
+      
+      </head>
+<body tabIndex=0>
+      <div class="liste-simplifie">
+
+      <table>
+        <tr>
+          <th></th>
+          <th>Cadeau</th>
+          <th>Description</th>
+          <th>Prix</th>
+          <th>Déjà offert</th>
+        </tr>
+        {% for categorie in categories %}
+            {% for article in articles %}
+                {% if article.categorie == categorie.categorie and article.nom %}
+                <tr>
+                    <th><img src=url({{ article.photo.url }})></th>
+                    <th>{{ article.nom }}</th>
+                    <th>{{ article.description }}</th>
+                    <th>{{ article.prix }}</th>
+                    <th>{{ article.deja_paye }}</th>
+                </tr>                
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+
+      </table>
+      </div>      
+
+</body>
+
+
+
+</html>

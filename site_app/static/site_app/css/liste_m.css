@@ -367,10 +367,11 @@ body {
 
 .card-container p a {
   color: #922B21;
+  text-decoration: none;
 }
 
 h1 {
-  margin: 10px 0 50px 0;
+  margin: 10px 0 40px 0;
   color: #922B21;
   text-align: center;
   width: 60%;
@@ -743,5 +744,15 @@ label {
   bottom: 50%;
   left: 0%;
   width: 50px;
+}
+
+.lien-imprimer {
+  color: #922a218f;
+  margin: 0.6rem;
+}
+
+.lien-imprimer a {
+  color: #922a218f;
+  text-decoration: none;
 }
 /*# sourceMappingURL=liste_m.css.map */

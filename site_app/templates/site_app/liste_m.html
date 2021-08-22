@@ -26,10 +26,17 @@
         <a href="liste_m" class="active">Liste de mariage</a>
         <a href="javascript:void(0);" class="icon" onclick="navbar_anim()"><i class="fa fa-bars"></i></a>
       </nav>
+
       <div class="card-container">
         <h1>Notre liste de mariage</h1>
         <p>Si votre présence le jour J reste le plus beau cadeau, voici quelques idées pour nous aider à nous installer en Belgique. Vous pouvez également <a onclick="show_participation()" style="cursor: pointer;">participer librement</a>.</p>
         <img class="hidden-charlie" src="{% static 'site_app/img/charlie-bg.png' %}">
+
+        <div class="lien-imprimer">
+          <i class="fa fa-print"></i>
+          <a  href="liste_imp">imprimer la liste</a>
+        </div>
+        
         {% for categorie in categories %}
         <div class="card-categorie">
           <i class="fa fa-angle-down" onclick="hide_categorie(event)" ></i>

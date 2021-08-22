@@ -1,0 +1,28 @@
+.liste-simplifie {
+  display: -ms-grid;
+  display: grid;
+  /* Hidden by default */
+  z-index: 200;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: white;
+  /* Black w/ opacity */
+  place-items: center;
+  padding: 0;
+}
+
+.liste-simplifie th {
+  border: 1px solid #949494;
+  padding: 8px;
+  margin: 0;
+  text-align: left;
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=liste_imp.css.map */

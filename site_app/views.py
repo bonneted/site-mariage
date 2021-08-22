@@ -57,3 +57,12 @@ def liste_m(request):
 
 
 
+def liste_imp(request):
+    articles = Article.objects.all().order_by('nom')
+    categories = Article.objects.values('categorie').distinct().order_by('-categorie')
+
+    context = {
+        'articles': articles,
+        'categories': categories,
+        }
+    return render(request, 'site_app/liste_imprimable.html',context)

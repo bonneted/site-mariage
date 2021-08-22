@@ -9,6 +9,7 @@ urlpatterns = [
     path("", views.index,name='homepage'),
     path("index", views.index,name='homepage'),
     path("liste_m", views.liste_m),
+    path("liste_imp", views.liste_imp),
 
 ]
 
