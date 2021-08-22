@@ -6,8 +6,6 @@
   /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%;
-  /* Full width */
   height: 100%;
   /* Full height */
   overflow: auto;
@@ -15,14 +13,20 @@
   background-color: white;
   /* Black w/ opacity */
   place-items: center;
-  padding: 0;
+  padding: 1rem;
 }
 
-.liste-simplifie th {
-  border: 1px solid #949494;
+.liste-simplifie table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.liste-simplifie th, .liste-simplifie td {
+  border: 1px solid #d8d8d8;
   padding: 8px;
   margin: 0;
   text-align: left;
-  font-size: 0.8rem;
 }
 /*# sourceMappingURL=liste_imp.css.map */

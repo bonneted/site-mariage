@@ -31,11 +31,11 @@
             {% for article in articles %}
                 {% if article.categorie == categorie.categorie and article.nom != "Participation libre" %}
                 <tr>
-                    <th><img width="80px" src={{ article.photo.url }}></th>
-                    <th>{{ article.nom }}</th>
-                    <th>{{ article.description }}</th>
-                    <th>{{ article.prix }}</th>
-                    <th>{{ article.deja_paye }}</th>
+                    <td><img width="80px" src={{ article.photo.url }}></td>
+                    <td>{{ article.nom }}</td>
+                    <td>{{ article.description }}</td>
+                    <td>{{ article.prix }}</td>
+                    <td>{{ article.deja_paye }}</td>
                 </tr>                
                 {% endif %}
             {% endfor %}
