@@ -31,7 +31,7 @@
             {% for article in articles %}
                 {% if article.categorie == categorie.categorie and article.nom %}
                 <tr>
-                    <th style="width: 20%;"><img src={{ article.photo.url }}></th>
+                    <th><img width="80px" src={{ article.photo.url }}></th>
                     <th>{{ article.nom }}</th>
                     <th>{{ article.description }}</th>
                     <th>{{ article.prix }}</th>
